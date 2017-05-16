@@ -17,7 +17,9 @@ if (ADAFRUIT_IO_KEY == 'nokey' or ADAFRUIT_IO_USERNAME == 'nouser'):
     print('no user or key environment variable')
     sys.exit()
     
-FEED_ID = 'SillyFire'
+FIREFEED_ID = 'Fire'
+AZIMUTHFEED_ID = 'Azimuth'
+ELEVFEED_ID = 'Elevation'
 
 ser = serial.Serial('/dev/cu.usbmodem1411',115200)
 
@@ -27,9 +29,11 @@ def connected(client):
     # This is a good place to subscribe to feed changes.  The client parameter
     # passed to this function is the Adafruit IO MQTT client so you can make
     # calls against it easily.
-    print 'Connected to Adafruit IO!  Listening for {0} changes...'.format(FEED_ID)
+    print 'Connected to Adafruit IO!  Listening for {0} changes...'.format(FIREFEED_ID)
     # Subscribe to changes on a feed named DemoFeed.
-    client.subscribe(FEED_ID)
+    client.subscribe(FIREFEED_ID)
+    client.subscribe(AZIMUTHFEED_ID)
+    client.subscribe(ELEVFEED_ID)
 
 def disconnected(client):
     # Disconnected function will be called when the client disconnects.
@@ -41,11 +45,22 @@ def message(client, feed_id, payload):
     # The feed_id parameter identifies the feed, and the payload parameter has
     # the new value.
     print 'Feed {0} received new value: {1}'.format(feed_id, payload)
-    if int(payload) == 1:
-        print "Fire"
-        ser.write(b'F')
-
-
+    if feed_id == FIREFEED_ID:
+        if int(payload) == 1:
+            print "Fire"
+            ser.write(b'F')
+    if feed_id == AZIMUTHFEED_ID:
+        degrees = int(payload)
+        print ("Setting azimuth %d" % degrees)
+        command = ('A %d' % degrees)
+        print command
+        ser.write(command)
+    if feed_id == ELEVFEED_ID:
+        degrees = int(payload)
+        print ("Setting elevationh %d" % degrees)
+        command = ('E %d' % degrees)
+        print command
+        ser.write(command)
 # Create an MQTT client instance.
 client = MQTTClient(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
 
