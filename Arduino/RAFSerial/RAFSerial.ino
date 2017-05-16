@@ -1,4 +1,6 @@
  #include <Servo.h>
+ #include <string.h>
+ 
 #define MOSFET 2
 #define BUTTON 12
 #define JOYX A0
@@ -15,10 +17,9 @@
 Servo xServo,yServo;
 void setup() {
   Serial.begin(115200);
-  Serial.println("Ready Aim Fire!");
   xServo.attach(SERV1);
   yServo.attach(SERV2);
-  yServo.write(90);
+  yServo.write(110);
   pinMode(MOSFET,OUTPUT);
   digitalWrite(MOSFET,LOW);
 
@@ -41,7 +42,39 @@ int lasty;
 
 void loop() {
 
-
+  // process serial commands
+  // A XXX - Azimuth degrees 
+  // E XXX - Elevation degrees
+  // F - Fire
+  // RL -- read light sensor
+  // RT -- read temp sensor
+  if (Serial.available()){
+    String command = Serial.readStringUntil('\r');
+    const char *command_c_str = command.c_str();
+    Serial.println(command_c_str);
+    char buffer[100];
+    int degrees;
+    if (command.length() <100){
+      int numscanned = sscanf(command_c_str,"%s %3d", buffer, &degrees);
+      if (numscanned == 1){
+        if(!strcmp(buffer,"RL")){
+          int light = analogRead(LIGHT);
+          Serial.println (light);
+        }else
+        if (!strcmp(buffer,"RT")){
+           int temp = analogRead(TEMP);
+          Serial.println (temp);       
+        }
+      }else if (numscanned == 2){
+        if (!strcmp(buffer,"A")){
+          xServo.write(degrees);
+        }
+        if (!strcmp(buffer,"E")){
+          yServo.write(degrees);
+        }
+      }
+    }
+  }
   if (digitalRead(BUTTON) == LOW)
   {
     Serial.println("fire!");
@@ -52,13 +85,13 @@ void loop() {
     digitalWrite(RED,LOW);
     delay(100);
   }
-  int light = analogRead(LIGHT);
+  
   int temp = analogRead(TEMP);
   //Serial.print("LIGHT: ");Serial.print(light);Serial.print(" TEMP: ");Serial.println(temp);
   int x = analogRead(JOYX);
   int y = analogRead(JOYY);
 
-  if(abs(lastx-x)>2)
+ /* if(abs(lastx-x)>2)
   {
     //Serial.print("X: ");Serial.println(x);
     xServo.write(x/4);
@@ -76,5 +109,5 @@ void loop() {
       yServo.write(map(y,480,1023,110,150));
     lasty = y;
   }
-
+  */
 }
