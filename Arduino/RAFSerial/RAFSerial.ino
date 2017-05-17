@@ -39,7 +39,15 @@ void setup() {
 
 int lastx;
 int lasty;
+void fire(){
+    Serial.println("fire!");
+    digitalWrite(RED,HIGH);
+    digitalWrite(MOSFET,HIGH);
+    delay(100);
+    digitalWrite(MOSFET,LOW);
+    digitalWrite(RED,LOW);
 
+}
 void loop() {
 
   // process serial commands
@@ -64,50 +72,19 @@ void loop() {
         if (!strcmp(buffer,"RT")){
            int temp = analogRead(TEMP);
           Serial.println (temp);       
-        }
+        }else if (!strcmp(buffer,"F")){
+	fire();
       }else if (numscanned == 2){
         if (!strcmp(buffer,"A")){
+          Serial.print("azimuth "); Serial.println(degrees);
           xServo.write(degrees);
         }
         if (!strcmp(buffer,"E")){
+          Serial.print("elevation "); Serial.println(degrees);
           yServo.write(degrees);
         }
       }
     }
   }
-  if (digitalRead(BUTTON) == LOW)
-  {
-    Serial.println("fire!");
-    digitalWrite(RED,HIGH);
-    digitalWrite(MOSFET,HIGH);
-    delay(1000);
-    digitalWrite(MOSFET,LOW);
-    digitalWrite(RED,LOW);
-    delay(100);
   }
-  
-  int temp = analogRead(TEMP);
-  //Serial.print("LIGHT: ");Serial.print(light);Serial.print(" TEMP: ");Serial.println(temp);
-  int x = analogRead(JOYX);
-  int y = analogRead(JOYY);
-
- /* if(abs(lastx-x)>2)
-  {
-    //Serial.print("X: ");Serial.println(x);
-    xServo.write(x/4);
-    lastx =x;
-  }
-  if(abs(lasty-y)>2)
-  {
-
-    // Y is also around 450-500 but y axis is at 90 essentially at rest,  so map forward and back;
-    //Serial.print("Y: ");Serial.println(y);
-    if (y < 480)
-    {
-      yServo.write(map(y,0,480,10,110));
-    }else
-      yServo.write(map(y,480,1023,110,150));
-    lasty = y;
-  }
-  */
 }
