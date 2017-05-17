@@ -58,6 +58,7 @@ void loop() {
   // RT -- read temp sensor
   if (Serial.available()){
     String command = Serial.readStringUntil('\r');
+    command.toUpperCase();
     const char *command_c_str = command.c_str();
     Serial.println(command_c_str);
     char buffer[100];
@@ -73,18 +74,23 @@ void loop() {
            int temp = analogRead(TEMP);
           Serial.println (temp);       
         }else if (!strcmp(buffer,"F")){
-	fire();
+	        fire();
+        }
       }else if (numscanned == 2){
         if (!strcmp(buffer,"A")){
           Serial.print("azimuth "); Serial.println(degrees);
           xServo.write(degrees);
         }
         if (!strcmp(buffer,"E")){
+          if (degrees > 160)
+            degrees = 160;
+          if (degrees < 20)
+            degrees = 20;
           Serial.print("elevation "); Serial.println(degrees);
           yServo.write(degrees);
         }
       }
     }
   }
-  }
 }
+

@@ -1,4 +1,4 @@
- #include <Servo.h>
+#include <Servo.h>
 #define MOSFET 2
 #define BUTTON 12
 #define JOYX A0
@@ -47,7 +47,7 @@ void loop() {
     Serial.println("fire!");
     digitalWrite(RED,HIGH);
     digitalWrite(MOSFET,HIGH);
-    delay(1000);
+    delay(250);
     digitalWrite(MOSFET,LOW);
     digitalWrite(RED,LOW);
     delay(100);
