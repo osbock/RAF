@@ -3,7 +3,7 @@ Software for a beginning programming class with Arduino, and IOT programming wit
 ![overviewpic](./Documents/images/overview.jpg "Overview picture")
 ## Instructions
  * Assembly Instructions
- * Software setup
+ * [Software setup](./Documents/Software.md)
 
 ## Software requirements
  * Arduino IDE
