@@ -1,0 +1,14 @@
+.p2 path {
+  stroke: none;
+  fill: #666;
+  stroke-weight: 0px;
+
+}
+
+.p2 path:first-child {
+  fill: #666;
+}
+
+.p2 rect {
+  fill: #fff;
+}
