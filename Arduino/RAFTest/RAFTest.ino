@@ -45,6 +45,8 @@ void loop() {
     digitalWrite(MOSFET,LOW);
     delay(100);
     digitalWrite(MOSFET,LOW);
+    Serial.println("Fire");
+    delay(2000);
   }
   int light = analogRead(LIGHT);
   int temp = analogRead(TEMP);
