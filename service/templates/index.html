@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Ready, Aim, Fire</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='presets/p2.css') }}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='knob.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='presets/p2.js') }}/"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        var namespace = '/raf';
+        var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port + namespace);
+
+        function onAzimuthUpdate(value) {
+            socket.emit('broadcast_event', {command: 'azimuth', value: value});
+        }
+
+        function onElevationUpdate(value) {
+            socket.emit('broadcast_event', {command: 'elevation', value: value});
+        }
+
+        $(document).ready(function() {
+            socket.on('connect', function() {
+                socket.emit('event', {data: 'connected'});
+            });
+
+            socket.on('logevent', function(evt) {
+              $("#output" ).append("<p>" +JSON.stringify(evt.data)+"</p>");
+            });
+
+            var start_time;
+            var ping_pong_times = [];
+            window.setInterval(function() {
+                start_time = (new Date).getTime();
+                socket.emit('my_ping');
+            }, 1000);
+
+            socket.on('my_pong', function() {
+                var latency = (new Date).getTime() - start_time;
+                ping_pong_times.push(latency);
+                ping_pong_times = ping_pong_times.slice(-30); // keep last 30 samples
+                var sum = 0;
+                for(var i = 0; i < ping_pong_times.length; i++) {
+                    sum += ping_pong_times[i];
+                }
+                $('#ping-pong').text(Math.round(10 * sum / ping_pong_times.length) / 10);
+            });
+
+            $('form#fire').submit(function(event) {
+                socket.emit('broadcast_event', {command: 'fire'});
+                return false;
+            });
+
+            $('form#disconnect').submit(function(event) {
+                socket.emit('disconnect');
+                return false;
+            });
+
+           new Knob(document.getElementById('azimuth_data'), new Ui.P2());
+           new Knob(document.getElementById('elevation_data'), new Ui.P2());
+        });
+    </script>
+    <style type="text/css">
+      body{
+          background: #222;
+          color:#ddd;
+          font-family: 'Ariel', sans-serif;
+          margin:60px auto;
+          width:600px;
+          height: 500px;
+          padding:40px;
+          border:1px solid #888;
+      }
+
+      #fire input{
+          width:100%;
+          height:45px;
+          background:#D02925;
+          color:#fff;
+          text-transform: uppercase;
+          font-size:16px;
+          font-weight: bold;
+          border:none;
+          outline:none;
+          margin-top:20px;
+          box-shadow: 1px 1px 1px #000;
+      }
+
+      #fire input:active {
+        color: #ccc;
+        background: #8c1815;
+      }
+
+      h1{
+          margin-bottom:40px;
+          text-align: center;
+      }
+
+      #output {
+          color: #fff;
+          padding: 20px 20px;
+      }
+
+      #output > p:before {
+          padding-right: 4px;
+          font-family: FontAwesome;
+          content: "\f054";
+      }
+
+      #elevation, #azimuth{
+          margin-bottom:50px;
+      }
+
+      :focus {
+          outline-color: transparent;
+          outline-style: none;
+      }
+
+      #elevation label, #azimuth label{
+          width:100%;
+          float:left;
+          text-align:center;
+          text-transform:uppercase;
+          margin-bottom: 16px;
+      }
+
+      .dial{
+          width:50%;
+          float:left;
+      }
+    </style>
+</head>
+<body>
+    <h1>Ready, Aim, Fire!</h1>
+    <div class='dial'>
+      <form id="azimuth" method="POST" action='#'>
+          <label>Azimuth</label>
+          <input class="preset2" type="range" min="5" max="200" data-width="300" data-height="300" data-angleOffset="285" data-angleRange="150" id="azimuth_data" name="azimuth_data" onchange="onAzimuthUpdate(this.value)">
+      </form>
+    </div>
+    <div class='dial'>
+      <form id="elevation" method="POST" action='#'>
+          <label>Elevation</label>
+          <input class="preset2" type="range" min="5" max="200" data-width="250" data-height="250" data-angleOffset="15" data-angleRange="150" id="elevation_data" name="elevation_data" onchange="onElevationUpdate(this.value)">
+      </form>
+    </div>
+    <form id="fire" method="POST" action='#'>
+        <input type="submit" value="Fire">
+    </form>
+    <div id="output">
+    </div>
+</body>
+</html>
