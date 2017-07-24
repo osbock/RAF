@@ -30,7 +30,7 @@ void setup() {
  for (int i = 9; i < 12; i++)
  {
   digitalWrite(i,HIGH);
-  delay(1000);
+  delay(200);
   digitalWrite(i,LOW);
  }
  
@@ -54,7 +54,7 @@ void loop() {
   }
   int light = analogRead(LIGHT);
   int temp = analogRead(TEMP);
-  //Serial.print("LIGHT: ");Serial.print(light);Serial.print(" TEMP: ");Serial.println(temp);
+  Serial.print("LIGHT: ");Serial.print(light);Serial.print(" TEMP: ");Serial.println(temp);
   int x = analogRead(JOYX);
   int y = analogRead(JOYY);
 
@@ -69,11 +69,11 @@ void loop() {
 
     // Y is also around 450-500 but y axis is at 90 essentially at rest,  so map forward and back;
     //Serial.print("Y: ");Serial.println(y);
-    if (y < 480)
+    if (y < 523)
     {
-      yServo.write(map(y,0,480,10,110));
+      yServo.write(map(y,0,523,1,80));
     }else
-      yServo.write(map(y,480,1023,110,150));
+      yServo.write(map(y,524,1023,81,110));
     lasty = y;
   }
 
