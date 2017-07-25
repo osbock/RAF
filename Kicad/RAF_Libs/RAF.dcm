@@ -4,4 +4,14 @@ $CMP AnalogJoystick
 D Adafruit Thumb joystick https://www.adafruit.com/product/2765
 $ENDCMP
 #
+$CMP FDC6305N
+D FDC6305N Dual N-Channel Mosfet
+F RAF_Data/FDC6305N.pdf
+$ENDCMP
+#
+$CMP TPS54302
+D TI Synchronous step down converter
+F RAF_Data/tps54302.pdf
+$ENDCMP
+#
 #End Doc Library

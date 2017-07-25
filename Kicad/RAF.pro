@@ -1,4 +1,4 @@
-update=Mon 24 Jul 2017 02:01:22 PM EDT
+update=Tue 25 Jul 2017 01:39:31 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+LibName31=/home/kevin/github/ultim8x8/kicad/ultim_bus_v4/ultimbus_libs/ultim_bus
