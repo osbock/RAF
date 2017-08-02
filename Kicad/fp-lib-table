@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name RAF_Libs)(type KiCad)(uri "$(KIPRJMOD)/RAF_Libs.pretty")(options "")(descr ""))
+  (lib (name ultim_bus)(type KiCad)(uri /home/kevin/github/ultim8x8/kicad/ultim_bus_v4/ultim_bus.pretty)(options "")(descr ""))
 )
