@@ -13,7 +13,7 @@
 #define LIGHT A2
 #define TEMP A3
 #define NEOPIXELPIN 8
-#define NUM_LEDS 8
+#define NUM_LEDS 9
 CRGB leds[NUM_LEDS];
 #define DATA_PIN NEOPIXELPIN
 #define BRIGHTNESS 20
@@ -35,15 +35,18 @@ void setup() {
   digitalWrite(PUMP,HIGH);
   delay(4000);
   digitalWrite(PUMP, LOW);
-/* 
-
- pinMode(RED,OUTPUT);
- pinMode(GREEN, OUTPUT);
- pinMode(BLUE,OUTPUT);
- */
- pinMode(BUTTON,INPUT_PULLUP);
-
-
+  pinMode(BUTTON,INPUT_PULLUP);
+  leds[0] = CRGB::Red;
+  FastLED.show();
+  delay(200);
+  leds[0] = CRGB::Green;
+  FastLED.show();
+  delay(200);
+  leds[0] = CRGB::Blue;
+  FastLED.show();
+  delay(200);
+  leds[0] = CRGB::Black;
+  FastLED.show();
  
 }
 void chase()
