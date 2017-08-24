@@ -1,0 +1,34 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AnalogJoystick
+D Adafruit Thumb joystick https://www.adafruit.com/product/2765
+$ENDCMP
+#
+$CMP FDC6305N
+D FDC6305N Dual N-Channel Mosfet
+F RAF_Data/FDC6305N.pdf
+$ENDCMP
+#
+$CMP LF60CDT
+D LDO Regulator +6V
+K POWER REGUL
+$ENDCMP
+#
+$CMP LM7805
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP LM7812
+D Linear Regulator +12V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP TPS54302
+D TI Synchronous step down converter
+F RAF_Data/tps54302.pdf
+$ENDCMP
+#
+#End Doc Library
