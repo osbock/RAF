@@ -18,7 +18,7 @@
   (fp_line (start 4.25 -3.1) (end -4.25 -3.1) (layer F.SilkS) (width 0.15))
   (pad 2 thru_hole circle (at 2.5 0) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask))
   (pad 1 thru_hole rect (at -2.5 0) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask))
-  (model Terminal_Blocks.3dshapes/TerminalBlock_Pheonix_PT-3.5mm_2pol.wrl
+  (model TerminalBlock_Pheonix_PT-5.0mm_2pol.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

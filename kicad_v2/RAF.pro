@@ -1,4 +1,4 @@
-update=Thu Aug 24 17:14:52 2017
+update=Fri Aug 25 01:34:09 2017
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,12 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[eeschema]
-version=1
-LibDir=
-[eeschema/libraries]
-LibName1=RAF_Libs/RAF
-LibName2=power
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -39,5 +33,11 @@ NetFmtName=Pcbnew
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=50
+[eeschema]
+version=1
+LibDir=
+[eeschema/libraries]
+LibName1=RAF_Libs/RAF
+LibName2=power
 [general]
 version=1

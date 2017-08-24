@@ -34,4 +34,9 @@
   (fp_arc (start 1.27 0) (end -0.03 2.1) (angle 115) (layer F.Fab) (width 0.1))
   (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 2.54 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask))
+  (model Resistor_LDR_4_9x4_2_RM2_54.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

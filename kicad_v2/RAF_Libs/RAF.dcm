@@ -4,6 +4,10 @@ $CMP AnalogJoystick
 D Adafruit Thumb joystick https://www.adafruit.com/product/2765
 $ENDCMP
 #
+$CMP D_Small
+D Diode
+$ENDCMP
+#
 $CMP FDC6305N
 D FDC6305N Dual N-Channel Mosfet
 F RAF_Data/FDC6305N.pdf
