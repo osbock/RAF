@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name RAF_Libs)(type KiCad)(uri "$(KIPRJMOD)/RAF_Libs.pretty")(options "")(descr ""))
+  (lib (name map2)(type KiCad)(uri /home/samata/projects-git/MAP2/kicad/map2.pretty)(options "")(descr ""))
 )
