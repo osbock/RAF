@@ -1297,4 +1297,14 @@ Wire Wire Line
 Connection ~ 1850 4175
 Text Notes 1225 4450 0    40   ~ 0
 RV1 is shunted on PCB.\nCut track if RV1 is used.
+Text Label 1925 3700 0    40   ~ 8
+RV1
+Text Label 1925 4175 0    40   ~ 8
+R1
+Wire Wire Line
+	1325 3700 1325 4175
+Text Label 1325 4175 0    40   ~ 8
+R1
+Text Label 1325 3700 0    40   ~ 8
+RV1
 $EndSCHEMATC

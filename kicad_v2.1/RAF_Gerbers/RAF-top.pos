@@ -1,5 +1,5 @@
-### Module positions - created on Sat Aug 26 16:44:44 2017 ###
-### Printed by Pcbnew version kicad 4.0.7-e0-6372~58~ubuntu16.04.1
+### Module positions - created on Sat Aug 26 19:59:51 2017 ###
+### Printed by Pcbnew version kicad 4.0.7-e1-6374~58~ubuntu16.04.1
 ## Unit = inches, Angle = deg.
 ## Side : top
 # Ref     Val          Package                    PosX       PosY       Rot  Side
@@ -23,6 +23,6 @@ R6        100k         R_0805_HandSoldering     2.1500     1.7500   90.0000  top
 R7        100k         R_0805_HandSoldering     2.5000     1.7500   90.0000  top
 RV1       100k         Res_variable             0.9250     0.2000    0.0000  top
 S1        FIRE         SW_SPST_PTS645           1.2500     1.0000    0.0000  top
-TH1       TEMP         R_0805_HandSoldering     0.4000     0.2000   90.0000  top
+TH1       TEMP         R_0805_HandSoldering     0.4000     0.2000  270.0000  top
 U1        RGB_WS2811B  LED_WS2812B-PLCC4        0.9500     1.6000  270.0000  top
 ## End
