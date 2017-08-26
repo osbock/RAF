@@ -3,7 +3,7 @@
   (general
     (links 99)
     (no_connects 0)
-    (area 110.922999 72.949999 179.653001 126.440001)
+    (area 96.492288 62.705 181.205238 126.692)
     (thickness 1.6)
     (drawings 80)
     (tracks 396)
@@ -2013,7 +2013,7 @@
       (net 1 +5V))
     (pad 2 thru_hole circle (at 1.7018 0 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 6 /A2))
-    (model Resistor_LDR_4_9x4_2_RM2_54.wrl
+    (model Resistor_LDR_5_0x3_4.wrl
       (at (xyz -0.067 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
