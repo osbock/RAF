@@ -1,11 +1,12 @@
-(module SEEED-Joystick_v2 (layer F.Cu) (tedit 59AEA5EF)
+(module SEEED-Joystick_v2 (layer F.Cu) (tedit 59AEC11C)
   (fp_text reference JOY1 (at 4.445 -3.81 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value SeeedJoystick (at 6.35 0 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text user FIRE (at 6.985 -12.7 90) (layer F.SilkS)
+  (fp_circle (center 0 0) (end -14 0) (layer F.SilkS) (width 0.3))
+  (fp_text user FIRE (at 6.35 -10.16 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (fp_text user Y (at 0 5 90) (layer F.SilkS)
@@ -96,7 +97,7 @@
   (pad "" np_thru_hole circle (at 7.75 -6.65) (size 1.5 1.5) (drill 1.5) (layers *.Cu))
   (pad "" np_thru_hole circle (at 7.75 6.65) (size 1.5 1.5) (drill 1.5) (layers *.Cu))
   (pad "" np_thru_hole circle (at -7.75 6.65) (size 1.5 1.5) (drill 1.5) (layers *.Cu))
-  (model seeed_joystick.wrl
+  (model seeed_joystick_2.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
