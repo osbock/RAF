@@ -9,7 +9,7 @@ encoding utf-8
 Sheet 1 1
 Title "Ready Aim Fire Shield"
 Date "2017-08-24"
-Rev "V2.0"
+Rev "V2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -157,7 +157,7 @@ U 1 1 59762D5F
 P 2200 3450
 F 0 "LDR1" H 2250 3525 40  0000 L CNB
 F 1 "LIGHT" H 2250 3475 40  0000 L TNB
-F 2 "RAF_Libs:Resistor_LDR_4.9x4.2_RM2.54" V 2375 3450 50  0001 C CNN
+F 2 "RAF_Libs:Resistor_LDR_5.0x3.4" V 2375 3450 50  0001 C CNN
 F 3 "" H 2200 3400 50  0000 C CNN
 F 4 "Value" H 2200 3450 60  0001 C CNN "manf#"
 	1    2200 3450
@@ -399,7 +399,7 @@ L R R7
 U 1 1 59776EC6
 P 9025 1775
 F 0 "R7" V 8950 1775 40  0000 C CNB
-F 1 "100K" V 9025 1775 40  0000 C CNB
+F 1 "100k" V 9025 1775 40  0000 C CNB
 F 2 "RAF_Libs:R_0805_HandSoldering" V 8955 1775 50  0001 C CNN
 F 3 "" H 9025 1775 50  0001 C CNN
 	1    9025 1775
@@ -756,9 +756,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 3975 4650 3975
 Wire Wire Line
-	2200 3600 2200 3800
-Wire Wire Line
-	2200 3700 2525 3700
+	1850 3700 2525 3700
 Connection ~ 2200 3700
 Wire Wire Line
 	2200 4100 2200 4250
@@ -837,11 +835,11 @@ Connection ~ 2525 2400
 Wire Notes Line
 	6650 2625 3800 2625
 Wire Notes Line
-	3800 2625 3800 5625
+	3800 2625 3800 6100
 Wire Notes Line
-	3800 5625 6650 5625
+	3800 6100 6650 6100
 Wire Notes Line
-	6650 5625 6650 2625
+	6650 6100 6650 2625
 Wire Wire Line
 	8500 5450 9500 5450
 Wire Wire Line
@@ -1222,4 +1220,91 @@ F 3 "" H 8125 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8125 4150 9475 4150
+$Comp
+L NPTH_hole H1
+U 1 1 59A15335
+P 4675 5875
+F 0 "H1" H 4675 6075 40  0000 C CNN
+F 1 "NPTH_hole" H 4675 6000 40  0000 C CNN
+F 2 "RAF_Libs:NPTH_hole_3mm" H 4675 5875 50  0001 C CNN
+F 3 "" H 4675 5875 50  0001 C CNN
+	1    4675 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPTH_hole H2
+U 1 1 59A15906
+P 5025 5875
+F 0 "H2" H 5025 6075 40  0000 C CNN
+F 1 "NPTH_hole" H 5025 6000 40  0000 C CNN
+F 2 "RAF_Libs:NPTH_hole_3mm" H 5025 5875 50  0001 C CNN
+F 3 "" H 5025 5875 50  0001 C CNN
+	1    5025 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPTH_hole H3
+U 1 1 59A15979
+P 5400 5875
+F 0 "H3" H 5400 6075 40  0000 C CNN
+F 1 "NPTH_hole" H 5400 6000 40  0000 C CNN
+F 2 "RAF_Libs:NPTH_hole_3mm" H 5400 5875 50  0001 C CNN
+F 3 "" H 5400 5875 50  0001 C CNN
+	1    5400 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPTH_hole H4
+U 1 1 59A159E2
+P 5750 5875
+F 0 "H4" H 5750 6075 40  0000 C CNN
+F 1 "NPTH_hole" H 5750 6000 40  0000 C CNN
+F 2 "RAF_Libs:NPTH_hole_3mm" H 5750 5875 50  0001 C CNN
+F 3 "" H 5750 5875 50  0001 C CNN
+	1    5750 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Res_variable RV1
+U 1 1 59A162CA
+P 1850 3950
+F 0 "RV1" H 1925 4025 40  0000 L CNB
+F 1 "100k" H 1925 3950 40  0000 L BNB
+F 2 "RAF_Libs:Res_variable" H 1850 3950 50  0001 C CNN
+F 3 "" H 1850 3950 50  0001 C CNN
+F 4 "Value" H 1850 3950 50  0001 C CNN "manf#"
+	1    1850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3700 1850 3750
+Wire Wire Line
+	1675 3950 1625 3950
+Wire Wire Line
+	1625 3950 1625 4175
+Wire Wire Line
+	1625 4175 2100 4175
+Wire Wire Line
+	1850 4175 1850 4150
+Wire Wire Line
+	2200 3600 2200 3700
+Wire Wire Line
+	2200 3800 2200 3775
+Wire Wire Line
+	2200 3775 2100 3775
+Wire Wire Line
+	2100 3775 2100 4175
+Connection ~ 1850 4175
+Text Notes 1225 4450 0    40   ~ 0
+RV1 is shunted on PCB.\nCut track if RV1 is used.
+Text Label 1925 3700 0    40   ~ 8
+RV1
+Text Label 1925 4175 0    40   ~ 8
+R1
+Wire Wire Line
+	1325 3700 1325 4175
+Text Label 1325 4175 0    40   ~ 8
+R1
+Text Label 1325 3700 0    40   ~ 8
+RV1
 $EndSCHEMATC
