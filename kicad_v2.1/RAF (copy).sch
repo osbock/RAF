@@ -145,11 +145,11 @@ F 3 "" H 5350 3825 50  0000 C CNN
 $EndComp
 Text Notes 4925 3700 0    60   ~ 12
 1
-Text Label 2525 1575 0    50   ~ 10
+Text Label 2525 750  0    50   ~ 10
 +5V
-Text Label 2525 1650 0    50   ~ 10
+Text Label 2525 875  0    50   ~ 10
 X
-Text Label 2525 1875 0    50   ~ 10
+Text Label 2525 1100 0    50   ~ 10
 Y
 $Comp
 L LDR03 LDR1
@@ -462,17 +462,28 @@ AIR PUMP
 Text Label 8350 1575 0    50   ~ 10
 2
 $Comp
-L GND #PWR07
-U 1 1 5977F6E0
-P 775 1625
-F 0 "#PWR07" H 775 1375 50  0001 C CNN
-F 1 "GND" H 775 1475 50  0000 C CNB
-F 2 "" H 775 1625 50  0001 C CNN
-F 3 "" H 775 1625 50  0001 C CNN
-	1    775  1625
+L SPST-M S1
+U 1 1 5977F318
+P 2275 2350
+F 0 "S1" H 2100 2625 50  0000 C CNB
+F 1 "FIRE" H 2125 2550 50  0000 C CNB
+F 2 "RAF_Libs:SW_SPST_PTS645" H 2275 2350 60  0001 C CNN
+F 3 "" H 2275 2350 60  0000 C CNN
+	1    2275 2350
 	1    0    0    -1  
 $EndComp
-Text Label 2525 1425 0    50   ~ 10
+$Comp
+L GND #PWR07
+U 1 1 5977F6E0
+P 2525 2450
+F 0 "#PWR07" H 2525 2200 50  0001 C CNN
+F 1 "GND" H 2525 2300 50  0000 C CNB
+F 2 "" H 2525 2450 50  0001 C CNN
+F 3 "" H 2525 2450 50  0001 C CNN
+	1    2525 2450
+	1    0    0    -1  
+$EndComp
+Text Label 2025 2350 2    50   ~ 10
 12(MISO)
 $Comp
 L CONN_01X03 J6
@@ -651,14 +662,26 @@ F 3 "" H 10100 7000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L AnalogJoystick JOY1
+U 1 1 59762EBF
+P 1375 1350
+F 0 "JOY1" H 1125 1075 50  0000 L CNB
+F 1 "AnalogJoystick" H 1125 1000 50  0000 L CNB
+F 2 "RAF_Libs:Adafruit-thumb-joystick" V 1590 1500 50  0001 C CNN
+F 3 "" V 1590 1500 50  0001 C CNN
+F 4 "Value" H 1375 1350 60  0001 C CNN "manf#"
+	1    1375 1350
+	1    0    0    -1  
+$EndComp
+$Comp
 L GND #PWR013
 U 1 1 599EA377
-P 2525 2450
-F 0 "#PWR013" H 2525 2200 50  0001 C CNN
-F 1 "GND" H 2525 2300 50  0000 C CNB
-F 2 "" H 2525 2450 50  0001 C CNN
-F 3 "" H 2525 2450 50  0001 C CNN
-	1    2525 2450
+P 2525 1675
+F 0 "#PWR013" H 2525 1425 50  0001 C CNN
+F 1 "GND" H 2525 1525 50  0000 C CNB
+F 2 "" H 2525 1675 50  0001 C CNN
+F 3 "" H 2525 1675 50  0001 C CNN
+	1    2525 1675
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -800,6 +823,15 @@ Wire Wire Line
 Connection ~ 9275 3500
 Wire Wire Line
 	9475 2375 9275 2375
+Wire Wire Line
+	2025 2350 2125 2350
+Wire Wire Line
+	2425 2350 2525 2350
+Wire Wire Line
+	2425 2400 2525 2400
+Wire Wire Line
+	2525 2350 2525 2450
+Connection ~ 2525 2400
 Wire Notes Line
 	6650 2625 3800 2625
 Wire Notes Line
@@ -857,6 +889,11 @@ Wire Wire Line
 Wire Wire Line
 	2500 6950 2500 7050
 Connection ~ 2500 6950
+Wire Wire Line
+	2125 2400 2075 2400
+Wire Wire Line
+	2075 2400 2075 2350
+Connection ~ 2075 2350
 Wire Notes Line
 	600  600  3100 600 
 Wire Notes Line
@@ -868,37 +905,39 @@ Wire Notes Line
 Text Notes 600  600  0    60   ~ 12
 INPUTS / SENSORS
 Wire Notes Line
+	600  1900 3100 1900
+Wire Notes Line
 	600  2800 3100 2800
 Wire Notes Line
 	600  4600 3100 4600
 Text Notes 625  700  0    40   ~ 8
 JOYSTICK
-Text Notes 1075 1200 0    40   ~ 8
+Text Notes 625  2000 0    40   ~ 8
 FIRE BUTTON
 Text Notes 625  2900 0    40   ~ 8
 LIGHT SENSOR
 Text Notes 625  4700 0    40   ~ 8
 TEMP SENSOR
 Wire Wire Line
-	1225 1650 1225 1925
+	1225 875  1225 1150
 Wire Wire Line
-	1000 1575 1000 2125
+	1000 750  1000 1350
 Wire Wire Line
-	1000 2125 1075 2125
+	1000 1350 1075 1350
 Wire Wire Line
-	1000 1575 2525 1575
+	1000 750  2525 750 
 Wire Wire Line
-	1475 1725 1475 1575
-Connection ~ 1475 1575
+	1475 950  1475 750 
+Connection ~ 1475 750 
 Wire Wire Line
-	1675 1875 2525 1875
+	1675 1100 2525 1100
 Wire Wire Line
-	1225 1650 2525 1650
+	1225 875  2525 875 
 Wire Wire Line
-	1375 2125 1475 2125
+	1375 1350 1475 1350
 Wire Wire Line
-	1475 2025 1475 2425
-Connection ~ 1475 2125
+	1475 1250 1475 1650
+Connection ~ 1475 1350
 Wire Wire Line
 	9175 1775 9275 1775
 Connection ~ 9275 1775
@@ -993,12 +1032,12 @@ Connection ~ 4650 5275
 $Comp
 L C C3
 U 1 1 599EFA94
-P 1900 2150
-F 0 "C3" H 1925 2250 40  0000 L CNB
-F 1 "0.1uF" H 1925 2050 40  0000 L CNB
-F 2 "RAF_Libs:C_0805_HandSoldering" H 1938 2000 50  0001 C CNN
-F 3 "" H 1900 2150 50  0001 C CNN
-	1    1900 2150
+P 1900 1375
+F 0 "C3" H 1925 1475 40  0000 L CNB
+F 1 "0.1uF" H 1925 1275 40  0000 L CNB
+F 2 "RAF_Libs:C_0805_HandSoldering" H 1938 1225 50  0001 C CNN
+F 3 "" H 1900 1375 50  0001 C CNN
+	1    1900 1375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1097,12 +1136,12 @@ $EndComp
 $Comp
 L C C4
 U 1 1 599F2F56
-P 2200 2150
-F 0 "C4" H 2225 2250 40  0000 L CNB
-F 1 "0.1uF" H 2225 2050 40  0000 L CNB
-F 2 "RAF_Libs:C_0805_HandSoldering" H 2238 2000 50  0001 C CNN
-F 3 "" H 2200 2150 50  0001 C CNN
-	1    2200 2150
+P 2200 1375
+F 0 "C4" H 2225 1475 40  0000 L CNB
+F 1 "0.1uF" H 2225 1275 40  0000 L CNB
+F 2 "RAF_Libs:C_0805_HandSoldering" H 2238 1225 50  0001 C CNN
+F 3 "" H 2200 1375 50  0001 C CNN
+	1    2200 1375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1125,21 +1164,21 @@ Wire Wire Line
 Wire Wire Line
 	8350 2275 9475 2275
 Wire Wire Line
-	2525 2425 2525 2450
+	2525 1650 2525 1675
 Wire Wire Line
-	1475 2425 2525 2425
+	1475 1650 2525 1650
 Wire Wire Line
-	1900 2300 1900 2425
-Connection ~ 1900 2425
-Wire Wire Line
-	2200 2300 2200 2425
-Connection ~ 2200 2425
-Wire Wire Line
-	1900 2000 1900 1650
+	1900 1525 1900 1650
 Connection ~ 1900 1650
 Wire Wire Line
-	2200 2000 2200 1875
-Connection ~ 2200 1875
+	2200 1525 2200 1650
+Connection ~ 2200 1650
+Wire Wire Line
+	1900 1225 1900 875 
+Connection ~ 1900 875 
+Wire Wire Line
+	2200 1225 2200 1100
+Connection ~ 2200 1100
 $Comp
 L C C5
 U 1 1 599F8D7E
@@ -1268,31 +1307,4 @@ Text Label 1325 4175 0    40   ~ 8
 R1
 Text Label 1325 3700 0    40   ~ 8
 RV1
-$Comp
-L SeeedJoystick JOY1
-U 1 1 59AE9022
-P 1375 2125
-F 0 "JOY1" H 900 1925 50  0000 L CNB
-F 1 "SeeedJoystick" H 900 1850 50  0000 L CNB
-F 2 "RAF_Libs:SEEED-Joystick_v2" V 2025 2075 50  0001 C CNN
-F 3 "" V 1490 2375 50  0001 C CNN
-	1    1375 2125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1425 1475 1500 1475
-Wire Wire Line
-	1425 1425 2525 1425
-Wire Wire Line
-	1025 1475 950  1475
-Wire Wire Line
-	950  1475 950  1425
-Wire Wire Line
-	775  1425 1025 1425
-Wire Wire Line
-	775  1425 775  1625
-Connection ~ 950  1425
-Wire Wire Line
-	1500 1475 1500 1425
-Connection ~ 1500 1425
 $EndSCHEMATC

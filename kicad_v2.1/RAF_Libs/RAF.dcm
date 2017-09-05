@@ -18,4 +18,8 @@ D LDO Regulator +6V
 K POWER REGUL
 $ENDCMP
 #
+$CMP SeeedJoystick
+D Seeed joystick: https://raw.githubusercontent.com/SeeedDocument/Grove-Thumb_Joystick/master/res/Analog_Joystick_Datasheet.jpg
+$ENDCMP
+#
 #End Doc Library
