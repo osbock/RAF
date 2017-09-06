@@ -1,4 +1,4 @@
-### Module positions - created on Tue Sep  5 21:02:38 2017 ###
+### Module positions - created on Wed Sep  6 23:27:22 2017 ###
 ### Printed by Pcbnew version kicad 4.0.7-e2-6376~58~ubuntu16.04.1
 ## Unit = inches, Angle = deg.
 ## Side : top
@@ -7,21 +7,21 @@ C1        0.1uF        C_0805_HandSoldering     1.3750     1.0000  270.0000  top
 C2        2.2uF        CP_Elec_4x5.7            1.5500     1.0000  270.0000  top
 C3        0.1uF        C_0805_HandSoldering     0.7500     0.4750    0.0000  top
 C4        0.1uF        C_0805_HandSoldering     1.2250     1.0000  270.0000  top
-C5        0.1uF        C_0805_HandSoldering     1.7500     1.6250  270.0000  top
-C6        0.1uF        C_0805_HandSoldering     1.9250     1.3000  270.0000  top
-C7        2.2uF        CP_Elec_4x5.7            1.7500     1.3000  270.0000  top
-C8        0.1uF        C_0805_HandSoldering     1.3500     1.6250  270.0000  top
+C5        0.1uF        C_0805_HandSoldering     1.6500     1.6750  270.0000  top
+C6        0.1uF        C_0805_HandSoldering     1.9500     1.6750  270.0000  top
+C7        2.2uF        CP_Elec_4x5.7            1.8000     1.6750  270.0000  top
+C8        0.1uF        C_0805_HandSoldering     1.3000     1.6750  270.0000  top
 C9        0.1uF        C_0805_HandSoldering     0.3000     1.7750    0.0000  top
-D1        S1ATR        SMA_Handsoldering        1.8500     0.4500   90.0000  top
-D2        S1ATR        SMA_Handsoldering        1.8500     0.8500   90.0000  top
+D1        S1ATR        SMA_Handsoldering        1.9250     0.4500   90.0000  top
+D2        S1ATR        SMA_Handsoldering        1.9250     0.8500   90.0000  top
 OSHW1     OSHW         OSHW_6mm                 0.1500     0.6000    0.0000  top
-Q1        FDC6305N     SuperSOT-6               2.3250     1.7500  270.0000  top
+Q1        FDC6305N     SuperSOT-6               1.8000     1.2750  270.0000  top
 R1        22K          R_0805_HandSoldering     1.1250     0.2500    0.0000  top
 R2        10K          R_0805_HandSoldering     0.2000     0.2000  270.0000  top
-R5        100k         R_0805_HandSoldering     2.0250     1.7500   90.0000  top
-R6        100k         R_0805_HandSoldering     2.1500     1.7500   90.0000  top
-R7        100k         R_0805_HandSoldering     2.5000     1.7500   90.0000  top
+R5        100k         R_0805_HandSoldering     1.4750     1.2750   90.0000  top
+R6        100k         R_0805_HandSoldering     1.6500     1.2750   90.0000  top
+R7        100k         R_0805_HandSoldering     1.9500     1.2750   90.0000  top
 RV1       100k         Res_variable             0.9250     0.2000    0.0000  top
 TH1       TEMP         R_0805_HandSoldering     0.4000     0.2000  270.0000  top
-U1        RGB_WS2811B  LED_WS2812B-PLCC4        1.5500     1.6250  270.0000  top
+U1        RGB_WS2811B  LED_WS2812B-PLCC4        1.4750     1.6750  270.0000  top
 ## End

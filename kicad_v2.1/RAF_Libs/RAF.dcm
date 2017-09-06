@@ -4,6 +4,11 @@ $CMP AnalogJoystick
 D Adafruit Thumb joystick https://www.adafruit.com/product/2765
 $ENDCMP
 #
+$CMP CONN_02X03
+D Connector, double row, 02x03
+K connector
+$ENDCMP
+#
 $CMP D_Small
 D Diode
 $ENDCMP

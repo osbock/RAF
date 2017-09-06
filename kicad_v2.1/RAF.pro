@@ -1,4 +1,4 @@
-update=Wed Sep  6 23:16:37 2017
+update=Wed Sep  6 23:31:46 2017
 version=1
 last_client=kicad
 [pcbnew]
@@ -39,6 +39,5 @@ LibDir=
 [eeschema/libraries]
 LibName1=RAF_Libs/RAF
 LibName2=power
-LibName3=conn
 [general]
 version=1
