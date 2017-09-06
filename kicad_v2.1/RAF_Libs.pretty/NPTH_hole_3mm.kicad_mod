@@ -1,4 +1,4 @@
-(module NPTH_hole_3mm locked (layer F.Cu) (tedit 59A1390F)
+(module NPTH_hole_3mm locked (layer F.Cu) (tedit 59B00C26)
   (fp_text reference H1 (at 0 -1.5875) (layer F.SilkS) hide
     (effects (font (size 1.016 1.016) (thickness 0.1524)))
   )
@@ -6,9 +6,4 @@
     (effects (font (size 1.016 1.016) (thickness 0.1524)))
   )
   (pad "" np_thru_hole circle (at 0 0) (size 3.175 3.175) (drill 3.175) (layers *.Cu *.Mask))
-  (model RowGB_Libs/3D_Modules/vite_2mm5.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1.2 1.2 1.2))
-    (rotate (xyz 0 0 0))
-  )
 )
