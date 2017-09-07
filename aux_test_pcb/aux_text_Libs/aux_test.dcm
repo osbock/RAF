@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LED_Small
+D Led
+$ENDCMP
+#
+#End Doc Library
