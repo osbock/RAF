@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.7-e2-6376~58~ubuntu16.04.1)
+(kicad_pcb (version 4) (host pcbnew 4.0.5)
 
   (general
     (links 21)
@@ -557,13 +557,13 @@
   (gr_text 1 (at 56.515 44.45 90) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.2032)))
   )
-  (gr_text B (at 83.185 54.61 90) (layer F.SilkS)
+  (gr_text B (at 83.185 59.69 90) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.2032)))
   )
   (gr_text R (at 83.185 57.15 90) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.2032)))
   )
-  (gr_text W (at 83.185 59.69 90) (layer F.SilkS)
+  (gr_text W (at 83.185 54.61 90) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.2032)))
   )
   (gr_line (start 55.245 60.96) (end 55.245 33.02) (layer Edge.Cuts) (width 0.15))
