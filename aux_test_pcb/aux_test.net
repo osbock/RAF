@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/samata/projects-git/RAF/aux_test_pcb/aux_test.sch)
-    (date "Thu Sep 21 22:20:29 2017")
+    (source /home/anool/projects-git/RAF/aux_test_pcb/aux_test.sch)
+    (date "Fri Sep 22 12:05:35 2017")
     (tool "Eeschema 4.0.7-e2-6376~58~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -40,13 +40,13 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 59B10C2A))
     (comp (ref R1)
-      (value 390E)
+      (value 470E)
       (footprint aux_test_Libs:Resistor_Horizontal_RM10mm)
       (libsource (lib aux_test) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 59B10C5E))
     (comp (ref R2)
-      (value 390E)
+      (value 470E)
       (footprint aux_test_Libs:Resistor_Horizontal_RM10mm)
       (libsource (lib aux_test) (part R))
       (sheetpath (names /) (tstamps /))
@@ -152,7 +152,7 @@
         (pin (num 2) (name ~) (type passive)))))
   (libraries
     (library (logical aux_test)
-      (uri /home/samata/projects-git/RAF/aux_test_pcb/aux_text_Libs/aux_test.lib)))
+      (uri /home/anool/projects-git/RAF/aux_test_pcb/aux_text_Libs/aux_test.lib)))
   (nets
     (net (code 1) (name /GND)
       (node (ref J4) (pin 3))

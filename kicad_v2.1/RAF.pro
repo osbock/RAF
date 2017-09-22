@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-update=Mon Sep 18 22:33:24 2017
-=======
-update=Wed Sep 20 12:41:10 2017
->>>>>>> 5de243f5e2b8000eacdcbae498093d6e961dcc5f
 version=1
 last_client=kicad
+update=Fri Sep 22 12:01:07 2017
 [pcbnew]
 version=1
 LastNetListRead=
