@@ -1,15 +1,15 @@
-### Module positions - created on Tue Sep 19 15:07:15 2017 ###
+### Module positions - created on Mon Oct  9 19:51:16 2017 ###
 ### Printed by Pcbnew version kicad 4.0.7-e2-6376~58~ubuntu16.04.1
 ## Unit = inches, Angle = deg.
 ## Side : top
 # Ref     Val          Package                    PosX       PosY       Rot  Side
 C1        0.1uF        C_0805_HandSoldering     1.3750     1.0000  270.0000  top
-C2        2.2uF        CP_Elec_4x5.7            1.5500     1.0000  270.0000  top
+C2        22uF         CP_Elec_4x5.7            1.5500     1.0000  270.0000  top
 C3        0.1uF        C_0805_HandSoldering     0.7500     0.4750    0.0000  top
 C4        0.1uF        C_0805_HandSoldering     1.2250     1.0000  270.0000  top
 C5        0.1uF        C_0805_HandSoldering     1.6500     1.6750  270.0000  top
 C6        0.1uF        C_0805_HandSoldering     1.9500     1.6750  270.0000  top
-C7        2.2uF        CP_Elec_4x5.7            1.8000     1.6750  270.0000  top
+C7        22uF         CP_Elec_4x5.7            1.8000     1.6750  270.0000  top
 C8        0.1uF        C_0805_HandSoldering     1.3000     1.6750  270.0000  top
 C9        0.1uF        C_0805_HandSoldering     0.3000     1.7750    0.0000  top
 D1        S1ATR        SMA_Handsoldering        1.9250     0.4500   90.0000  top

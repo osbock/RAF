@@ -1,6 +1,6 @@
 version=1
 last_client=kicad
-update=Mon Oct  9 19:18:47 2017
+update=Mon Oct  9 19:51:23 2017
 [pcbnew]
 version=1
 LastNetListRead=
