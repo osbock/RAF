@@ -28,12 +28,12 @@ void setup() {
 
   xServo.attach(SERV1);
   yServo.attach(SERV2);
-  yServo.write(90);
+  yServo.write(3);
   pinMode(SOLENOID,OUTPUT);
   digitalWrite(SOLENOID,LOW);
   pinMode(PUMP,OUTPUT);
   digitalWrite(PUMP,HIGH);
-  delay(4000);
+  delay(10000);
   digitalWrite(PUMP, LOW);
   pinMode(BUTTON,INPUT_PULLUP);
   leds[0] = CRGB::Red;
@@ -60,7 +60,7 @@ void chase()
       FastLED.show();
 
       // Wait a little bit
-      delay(100);
+      delay(250);
 
       // Turn our current led back to black for the next loop around
       leds[whiteLed] = CRGB::Black;
@@ -81,7 +81,7 @@ void loop() {
     digitalWrite(SOLENOID,LOW);
     chase();
     digitalWrite(PUMP,HIGH);
-    delay(4000);
+    delay(3000);
     digitalWrite(PUMP, LOW);
     delay(100);
   }
@@ -104,9 +104,9 @@ void loop() {
     Serial.print("Y: ");Serial.println(y);
     if (y < 523)
     {
-      yServo.write(map(y,0,518,1,100));
+     yServo.write(map(y,523,0,31,70));
     }else
-      yServo.write(map(y,519,1023,101,130));
+      yServo.write(map(y,524,1023,30,3));
     lasty = y;
   }
 
