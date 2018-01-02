@@ -37,5 +37,36 @@ Slip the syringe into the barrel holder 3D printed part and snap into the Pan-ti
 If you have a Luer style syringe, install the Luer to hose barb adapter. It screws in
 ![luer](./images/AssemblyV2/IMG_1586.jpg)
 
+Cut approximately 5-6" of tubing and connect between the barb on the syringe and the front (axial) valve of the solenoid valve. If you dont have the Luer-barb, or have a syringe with a slip on style end, just slide the tubing over that.
+![first tubing](./images/AssemblyV2/IMG_1587.jpg)
+
+## Pressure Vessel
+Unscrew the two caps from the "two barb" bottle cap. These slip over the tubing, the tubing over the barb and then screw the caps down over the tubing.
+![cap prep](./images/AssemblyV2/IMG_1588.jpg)
+Attach approximately 8" of tubing to the other barb of the solenoid valve, slide the retaining cap over the other end, and fasten to the bottle cap barb.
+![tubing attach](./images/AssemblyV2/IMG_1589.jpg)
+![solenoid attach](./images/AssemblyV2/IMG_1590.jpg)
+
+Take another 8" piece and cut it in two pieces (one can be shorter, it doesn't matter) we'll be putting a 1-way valve inline here and connecting the pump to the pressure vessel
+![tubing cut](./images/AssemblyV2/IMG_1591.jpg)
+
+Slide the tubing over the ends of the oneway valve. The disk part (shown here with a short tube attached) goes toward the pump.
+![valve attach](./images/AssemblyV2/IMG_1592.jpg)
+
+Attach the other end (away from the disk) to the pressure cap
+![tubing attach](./images/AssemblyV2/IMG_1593.jpg)
+
+Finally Attach the remaining end to the pump output. If your pump has two barbs it's the one on the end (not the side) axially aligned with the length of the pump.
+![pump attach](./images/AssemblyV2/IMG_1594.jpg)
+
+Next screw on your pressure vessel (soda bottle) this completes the Pneumatic assembly. This picture also gives you a good view of all the connections. make sure yours looks like this.
+![bottle](./images/AssemblyV2/IMG_1595.jpg)
+
+
+
+
+
+
+
 
 
