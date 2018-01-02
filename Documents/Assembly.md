@@ -62,6 +62,11 @@ Finally Attach the remaining end to the pump output. If your pump has two barbs 
 Next screw on your pressure vessel (soda bottle) this completes the Pneumatic assembly. This picture also gives you a good view of all the connections. make sure yours looks like this.
 ![bottle](./images/AssemblyV2/IMG_1595.jpg)
 
+## Electronics assembly
+Take the RAF shield from the antistatic bag (it's the board with a joystick). Also remove the Arduino from it's packaging, and line up the pins from shield to the Arduino. Note that there are more pins on one side than the other, make sure you have the right headers on both sides. Carefully press them together straight down.
+![Shield alignment](./images/AssemblyV2/IMG_1596.jpg)
+![Shield alignment](./images/AssemblyV2/IMG_1597.jpg)
+
 
 
 
