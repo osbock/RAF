@@ -67,6 +67,10 @@ Take the RAF shield from the antistatic bag (it's the board with a joystick). Al
 ![Shield alignment](./images/AssemblyV2/IMG_1596.jpg)
 ![Shield alignment](./images/AssemblyV2/IMG_1597.jpg)
 
+Attach the leads from the pump to the screw terminals (inside set, near the middle of the end of the shield) labeled PUMP. Make sure the screws are screwed out first to reveal a little hole to stick the wires in. Stick a wire in and tighten by screwing clockwise. Note that polarity doesn't matter.
+![pump attach](./images/AssemblyV2/IMG_1598.jpg)
+Repeat for the solenoid.
+![sol attach](./images/AssemblyV2/IMG_1599.jpg)
 
 
 
