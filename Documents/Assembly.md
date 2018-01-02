@@ -72,6 +72,23 @@ Attach the leads from the pump to the screw terminals (inside set, near the midd
 Repeat for the solenoid.
 ![sol attach](./images/AssemblyV2/IMG_1599.jpg)
 
+Attach the Servo extension cables to the servo leads from the pan tilt mechanism. These are supplied to give you more flexibility in laying out your whole machine.
+Line up the wires so they are similarly colored. In the example here, orange goes to white, red to red and brown to black.
+(white is signal, Red is servo positive voltage, Black is Ground.) The middle one is alway voltage, and usually the darkest one is ground.
+![Servo Extensions](./images/AssemblyV2/IMG_1600.jpg)
+Attach the extension leads to the shield. Attach the bottom servo (azimuth) to the header labeled 3 (closest to the edge of the board) and the upper (elevation) servo to the header marked 5. Each header is also labeled on the side, W R B. Line these up to the Signal (W) Voltage (R) and GND (B). Note the female headers on the leads are oriented perpendicular to the long edge of the board.
+![Servo Connections](./images/AssemblyV2/IMG_1603.jpg)
+
+## Make it easier to move around and keep together.
+Now we'll fasten everything to the foam core. Lay out your components in a way you feel convenient. You don't have to match this picture. Later if you want to tidy even more you can adjust the lengths of the leads and tubing.
+![Final Assembly](./images/AssemblyV2/IMG_1605.jpg)
+
+You can use the brass paper fasteners to attach the 3D printed parts, and the two sided foam tape to attach the pan-tilt and the arduino.
+The brass fasteners can be pushed through the holes and through the foam core. If you have trouble, you can pre-punch holes with an x-acto knife in the foam core.
+![fasteners](./images/AssemblyV2/IMG_1604.jpg)
+
+And here's a closeup (the bottle is out of the pic) of the final assembly:
+![final-final](./images/AssemblyV2/IMG_1606.jpg)
 
 
 
