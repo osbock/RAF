@@ -2,7 +2,7 @@
 Software for a beginning programming class with Arduino, and IOT programming with MQTT. Hardware consists of an Arduino, Shield, Pan/tilt mechanism and pneumatic components for firing foam darts
 ![overviewpic](./Documents/images/overview.jpg "Overview picture")
 ## Instructions
- * Assembly Instructions
+ * [Assembly Instructions](./Documents/Assembly.md)
  * [Software setup](./Documents/Software.md)
 
 ## Software requirements
