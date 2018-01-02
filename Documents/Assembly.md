@@ -1,7 +1,7 @@
 # Hardware Assembly
 This is what the fully assembled kit will look like when we are finished
 
-![Final Assembly](./images/AssemblyV2/IMG_1606.jpg)
+![Final Assembly](./images/AssemblyV2/IMG_1605.jpg)
 
 ## Unpack your kit
 Layout the contents on a table, putting like things together
