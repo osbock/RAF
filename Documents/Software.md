@@ -6,7 +6,12 @@
    * If you have pip installed, sudo pip install adafruit-io
    * otherwise, unzip repository, and python setup.py install
  * [Arduino](https://www.arduino.cc/en/Main/Software#download)
+ 
    Note: download and install the desktop version. The WebIDE is untested with these course materials.
    
  ## Sample code/Arduino Libraries
  Clone or [download the zip](https://github.com/osbock/RAF/archive/master.zip) of this repository
+ 
+ ## Adafruit.io
+   * Get an account at [Adafruit.com](https://adafruit.com)
+   * Sign up for [Adafruit.io](https://io.adafruit.com/)
