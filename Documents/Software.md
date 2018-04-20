@@ -1,5 +1,5 @@
 # Software Setup
- * [Python 2.7](https://www.python.org/downloads/release/python-2713/)
+ * [Python 2.7](https://www.python.org/downloads/release/python-2713/) (note: preinstalled on most macs)
  * Pip -- comes installed with the python.org download
  * PySerial -- pip install pyserial (sudo pip install pyserial #mac and linux)
  * [Adafruit IO](https://github.com/adafruit/io-client-python)
