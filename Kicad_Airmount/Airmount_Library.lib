@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Motor_DC
+#
+DEF Motor_DC M 0 0 Y Y 1 F N
+F0 "M" 100 100 50 H V L CNN
+F1 "Motor_DC" 100 -200 50 H V L TNN
+F2 "" 0 -90 50 H I C CNN
+F3 "" 0 -90 50 H I C CNN
+$FPLIST
+ Pin_Headers:Pin_Header_Straight_1x02
+ Connect:bornier2
+ TerminalBlock*2pol
+$ENDFPLIST
+DRAW
+C 0 -60 128 0 1 10 N
+P 5 0 0 0 -50 -130 -50 20 0 -80 50 20 50 -130 N
+P 2 0 1 0 0 -300 0 -280 N
+P 2 0 1 0 0 -188 0 -204 N
+P 2 0 1 0 0 68 0 82 N
+P 2 0 1 0 0 80 0 100 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
