@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 9)
+    (drawings 14)
     (tracks 23)
     (zones 0)
     (modules 4)
@@ -30,7 +30,7 @@
     (46 B.CrtYd user)
     (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -266,6 +266,16 @@
     )
   )
 
+  (gr_line (start 120.7008 78.613) (end 120.904 78.486) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 127 88.9) (end 120.700801 78.613001) (angle -148.5189608) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 133.2992 78.613) (end 133.096 78.486) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 127 88.9) (end 127 100.965) (angle -148.5189608) (layer Edge.Cuts) (width 0.15))
+  (gr_text Airmount_v2 (at 127.127 99.187) (layer F.SilkS)
+    (effects (font (size 1.016 1.016) (thickness 0.1524)))
+  )
+  (gr_text Airmount_v2 (at 127 99.187) (layer B.SilkS)
+    (effects (font (size 1.016 1.016) (thickness 0.1524)) (justify mirror))
+  )
   (dimension 28.067 (width 0.15) (layer Dwgs.User)
     (gr_text "28.067 mm" (at 143.54 86.9315 90) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -296,7 +306,6 @@
   (gr_line (start 132.08 72.898) (end 121.92 72.898) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 133.096 78.486) (end 133.096 73.914) (layer Edge.Cuts) (width 0.15))
   (gr_circle (center 127 88.9) (end 132.5 88.9) (layer Edge.Cuts) (width 0.15))
-  (gr_arc (start 127 88.9) (end 120.904 78.486) (angle -299.3135022) (layer Edge.Cuts) (width 0.15))
 
   (segment (start 132.969 96.901) (end 127 96.901) (width 0.762) (layer F.Cu) (net 1))
   (segment (start 135.9916 93.8784) (end 134.112 95.758) (width 0.762) (layer F.Cu) (net 1))

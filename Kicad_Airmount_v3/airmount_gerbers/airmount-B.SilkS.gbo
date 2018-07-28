@@ -1,19 +1,19 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,6.0.0-rc1-unknown-7dfc4e3~65~ubuntu18.04.1*
-G04 #@! TF.CreationDate,2018-07-28T12:11:48+05:30*
+G04 #@! TF.CreationDate,2018-07-28T16:35:14+05:30*
 G04 #@! TF.ProjectId,airmount,6169726D6F756E742E6B696361645F70,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Legend,Bot*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 6.0.0-rc1-unknown-7dfc4e3~65~ubuntu18.04.1) date Sat Jul 28 12:11:48 2018*
+G04 Created by KiCad (PCBNEW 6.0.0-rc1-unknown-7dfc4e3~65~ubuntu18.04.1) date Sat Jul 28 16:35:14 2018*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
 %ADD10C,0.152400*%
 %ADD11C,4.464000*%
-%ADD12C,0.100000*%
+%ADD12C,0.127000*%
 %ADD13C,2.940000*%
 %ADD14R,2.150000X2.150000*%
 %ADD15C,2.150000*%
