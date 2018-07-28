@@ -1,0 +1,10 @@
+(module p_contacts2 (layer F.Cu) (tedit 5B5C0A1D)
+  (fp_text reference M1 (at 0 6.35) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Motor_DC (at 0 -8.89) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at -8.9916 0) (size 4.064 4.064) (drill 2.54) (layers *.Mask F.Cu))
+  (pad 2 thru_hole circle (at 8.9916 0) (size 4.064 4.064) (drill 2.54) (layers *.Mask F.Cu))
+)
