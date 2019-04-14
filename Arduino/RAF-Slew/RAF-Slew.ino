@@ -54,13 +54,13 @@ void setup() {
   digitalWrite(PUMP, LOW);
 }
 
-/* 
- * Utility function for updating a servo to a new value.
- * This will be called twice (once for altitude, once for azimuth).
- *
- * Avoids jitter by allowing a "dead zone" near the joystick center.
- * You can change the width of the dead zone with the NULL_ZONE #define
- */
+/*
+   Utility function for updating a servo to a new value.
+   This will be called twice (once for altitude, once for azimuth).
+
+   Avoids jitter by allowing a "dead zone" near the joystick center.
+   You can change the width of the dead zone with the NULL_ZONE #define
+*/
 int update_servo(int value, int pin, Servo servo, int high, int inversion) {
   int delta = analogRead(pin) - JOY_MID;
   if (abs(delta) > NULL_ZONE) {
@@ -82,17 +82,17 @@ int update_servo(int value, int pin, Servo servo, int high, int inversion) {
 }
 
 /*
- * Detects a request for launch, then
- * fires the solenoid and recharges the air
- * reservoir as required.
- */
+   Detects a request for launch, then
+   fires the solenoid and recharges the air
+   reservoir as required.
+*/
 void check_for_launch() {
   if (digitalRead(BUTTON) != LOW) {
     return;
   }
 
   Serial.println("fire!");
-  
+
   //  Trigger solenoid, wait, then clear solenoid
   digitalWrite(SOLENOID, HIGH);
   delay(SOLENOID_FIRE_DURATION_MILLIS);
@@ -105,10 +105,10 @@ void check_for_launch() {
 }
 
 /*
- * Our main loop.  Not much to this one.
- * Simply check for a launch, set the servo positions,
- * delay for 1/50th of a second, and repeat.
- */
+   Our main loop.  Not much to this one.
+   Simply check for a launch, set the servo positions,
+   delay for 1/50th of a second, and repeat.
+*/
 int current_azimuth = AZIMUTH_HOME;
 int current_altitude = ALTITUDE_HOME;
 void loop() {
