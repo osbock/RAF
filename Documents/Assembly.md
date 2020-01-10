@@ -12,30 +12,25 @@ Layout the contents on a table, putting like things together
 
 First perpare your gas solenoid (electronically controlled air release valve).
 Take off the blue caps from the inputs/outputs of the valve
-![Caps Off](./images/AssemblyV2/IMG_1573.jpg)
+![Caps Off](./images/AssemblyV3/IMG_2965.jpg)
 
-Attach the leads to the contact tabs on the back of the valve. They are tight so some force is required, but be careful not o bend or break the connectors.
-![leads on](./images/AssemblyV2/IMG_1575.jpg)
+There are two sets of leads with a white JST connector on one end connect one to the matching connector on the board on the back of the solenoid.
 
 Feed the Zip ties through the channels in the bottom of one of the 3D printed holders. Note the orientation of the zip tie. Do this for both channels (x2)
-![zipit](./images/AssemblyV2/IMG_1578.jpg)
+![leads on](./images/AssemblyV3/IMG_2966.jpg)
 
 Place the Solenoid valve in the cradle, and fasten the zip ties around it, tighten and clip off the excess.
-![zipit good](./images/AssemblyV2/IMG_1579.jpg)
-![zipit good](./images/AssemblyV2/IMG_1580.jpg)
+![zipit good](./images/AssemblyV3/IMG_2967.jpg)
 
 Prepare the other cradle the same way and fasten the pump to it.
-![zip pump](./images/AssemblyV2/IMG_1581.jpg)
+![zip pump](./images/AssemblyV3/IMG_2969.jpg)
 
 ## Barrel assembly
 Remove the plunger from the 5ml Syringe. Discard (unless you can think of a cool use...)
-![plunger removal](./images/AssemblyV2/IMG_1584.jpg)
+![plunger removal](./images/AssemblyV3/IMG_2973.jpg)
 
 Slip the syringe into the barrel holder 3D printed part and snap into the Pan-tilt mechanism. Note that the "handle end" of the syringe (front of the barrel) points away from where the leads come out of the pan-tilt.
-![Barrel assembly](./images/AssemblyV2/IMG_1585.jpg)
-
-If you have a Luer style syringe, install the Luer to hose barb adapter. It screws in
-![luer](./images/AssemblyV2/IMG_1586.jpg)
+![Barrel assembly](./images/AssemblyV3/IMG_2976.jpg)
 
 Cut approximately 5-6" of tubing and connect between the barb on the syringe and the front (axial) valve of the solenoid valve. If you dont have the Luer-barb, or have a syringe with a slip on style end, just slide the tubing over that.
 ![first tubing](./images/AssemblyV2/IMG_1587.jpg)
