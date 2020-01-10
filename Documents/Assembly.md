@@ -1,12 +1,12 @@
 # Hardware Assembly
 This is what the fully assembled kit will look like when we are finished
 
-![Final Assembly](./images/AssemblyV2/IMG_1605.jpg)
+![Final Assembly](./images/AssemblyV3/IMG_2986.jpg)
 
 ## Unpack your kit
 Layout the contents on a table, putting like things together
 
-![Knolled parts](./images/AssemblyV2/Kit_contents.jpg)
+![Knolled parts](./images/AssemblyV3/IMG_2961.jpg)
 
 ## Solenoid and pump preparation. Preparation
 
