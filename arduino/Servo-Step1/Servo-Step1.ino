@@ -11,8 +11,6 @@
 #define LIGHT A2
 #define TEMP A3
 #define NEOPIXELPIN 8
-#define NUM_LEDS 1
-CRGB leds[NUM_LEDS];
 
 Servo azimuth;
 Servo elevation;
