@@ -9,7 +9,7 @@ itsdangerous==0.24
 Jinja2==2.9.6
 MarkupSafe==1.0
 pyserial==3.3
-python-engineio==1.5.1
+python-engineio==3.8.2.post1
 python-socketio==1.7.4
 requests==2.14.2
 six==1.10.0
