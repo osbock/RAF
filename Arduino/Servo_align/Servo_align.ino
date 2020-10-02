@@ -7,20 +7,20 @@
  http://www.arduino.cc/en/Tutorial/Knob
 */
 
-#include <Servo.h>
+#include <Servo.h>  // including the library of servo motor
 
-Servo azimuth;  
-Servo elevation;
-#define azpin 3
-#define elpin 5
+Servo azimuth;      // defining servo positions
+Servo elevation;    // defining servo positions
+#define azpin 3     // defining the I/O pin on arduino 
+#define elpin 5     // defining the I/O pin on arduino 
 void setup() {
-  azimuth.attach(azpin);
-  elevation.attach(elpin);
+  azimuth.attach(azpin);   // Pin on which the function is there
+  elevation.attach(elpin); // Pin on which the function is there
 }
 
 void loop() {
-  azimuth.write(90);
-  elevation.write(1);
+  azimuth.write(90);   //make the azimuth servo turn 90 degree
+  elevation.write(1);  //make the elevation servo turn 90 degree
 }
   
 
