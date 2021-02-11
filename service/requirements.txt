@@ -16,4 +16,4 @@ six==1.10.0
 socketIO-client==0.7.2
 virtualenv==15.1.0
 websocket-client==0.40.0
-Werkzeug==0.12.1
+Werkzeug==0.15.3
